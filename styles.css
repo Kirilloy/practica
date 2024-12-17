@@ -1,0 +1,212 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    background: #fdd3d7;
+    color: #fff;
+    padding: 10px 10;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .row.g-4 {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .service-card {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Герой-секция */
+  .hero {
+    height: 100vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider, .service-slider {
+    display: flex;
+    gap: 0;
+  }
+  .slider-container, .service-slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .slider-container button, .service-slider-container button {
+    z-index: 10;
+  }
+  .service-slider .col-12 {
+    flex: 0 0 100%; /* Один элемент занимает всю ширину контейнера */
+  }
+  
+  .hero .btn {
+    padding: 10px 20px;
+    background: #ff007f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Секция услуг */
+  #services {
+    padding: 0px;
+    background: #f4f4f4;
+  }
+  
+  #services .service-cards {
+    display: flex;
+    gap: 20px;
+  }
+  .animate__animated{
+    margin-top: -450px;
+    color: #157347;
+  }
+  /* Галерея */
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между изображением и текстом */
+  }
+  
+  .logo img {
+    height: 40px; /* Настройте размер изображения */
+    width: auto; /* Сохраняет пропорции */
+  }
+  
+  .logo span {
+    font-size: 20px; /* Размер текста логотипа */
+    font-weight: bold;
+    color: #fff; /* Цвет текста */
+  }
+  .appointment-form {
+  margin-top: 80px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.appointment-form h3 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.appointment-form .form-label {
+  font-weight: bold;
+}
+
+.appointment-form input {
+  border-radius: 8px;
+}
+
+.appointment-form button {
+  width: 100%;
+}
+#about h2 {
+  font-weight: bold;
+  color: #28a745; /* Зеленый цвет заголовка */
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+#about img {
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.about-card {
+  background-color: #f8f9fa; /* Светлый фон */
+  border-radius: 15px; /* Закругленные углы */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для объема */
+  max-width: 800px; /* Ограничиваем ширину */
+  text-align: center;
+}
+
+#about h3 {
+  font-weight: bold;
+  color: #28a745; /* Зеленый цвет заголовка */
+}
+.studio-card {
+  background-color: #f8f9fa; /* Светлый фон */
+  border-radius: 15px; /* Закругленные углы */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+}
+
+.studios {
+margin-bottom: 1000px;
+}
+.studio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.studio-card:hover {
+  transform: scale(1.03);
+}
+
+.studio-card h4 {
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+
+.studio-card p {
+  font-size: 1rem;
+  color: #555;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudioKiss - Фотостудия</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-color: #ffffff;
+    }
+    .service-card {
+      background-color: #f8f9fa;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+    }
+    .service-card img {
+      border-radius: 10px;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .service-btn {
+      background-color: #157347;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .service-btn:hover {
+      background-color: #218838;
+      color: #ffffff;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    #studios {
+      margin-top: -800px; /* Уменьшаем отступ сверху, чтобы переместить блок вверх */
+      padding-top: 50px; /* Добавляем padding для компенсации верхнего отступа */
+    }
+  </style>
+  
+  <div class="appointment-form">
+    <h3>Записаться на фотосессию</h3>
+    <a></a><form>
+      <div class="mb-3">
+        <label for="name" class="form-label"></label>
+        <input type="text" class="form-control" id="name" placeholder="Введите имя">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="surname" placeholder="Введите фамилию">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+      </div>
+      <div class="mb-3">
+        <input type="date" class="form-control" id="date">
+      </div>
+      <button type="submit" class="btn btn-success">Записаться</button>
+    </form>
+  </div></a>
+</head>
+<body>
+
+  
+  <header>
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <div class="logo d-flex align-items-center">
+        <img src="logo.jpg" alt="StudioKiss Logo" class="me-2" style="height: 40px;">
+        <span>StudioKiss</span>
+      </div>
+      <nav>
+        <ul class="d-flex list-unstyled gap-4">
+          <li><a href="#home" class="text-decoration-none text-dark">Главная</a></li>
+          <li><a href="#services" class="text-decoration-none text-dark">Услуги</a></li>
+          <li><a href="#gallery" class="text-decoration-none text-dark">Галерея</a></li>
+          <li><a href="#contacts" class="text-decoration-none text-dark">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="contacts text-dark">
+        <p class="mb-0">+7 (423) 275-8-572</p>
+        <p class="mb-0">studiokiss@mail.ru</p>
+      </div>
+    </div>
+  </header>
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="about-card mx-auto p-4 rounded shadow">
+        <h3 class="text-success mb-3">О StudioKiss</h3>
+        <p>
+          StudioKiss – это забота, красота и атмосфера. Арендуйте залы студии для своей фото/видео съёмки или мероприятия.
+          Также вы можете воспользоваться услугами наших специалистов – фотографов, визажистов, стилистов.
+          Фотошкола StudioKiss – одна из лучших в городе. Доверяйте себя профессионалам.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="home" class="hero text-center text-white d-flex align-items-center justify-content-center" style="height: 100vh; background: url('hero-bg.jpg') no-repeat center/cover;">
+    <div>
+      <h1 class="animate__animated animate__fadeIn">Добро пожаловать в StudioKiss<br>Исполняем ваши желания</br></h1>
+    </div>
+  </section>
+  <section id="studios" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 text-success">Интерьерные студии</h2>
+    <div class="row g-4">
+      <!-- Зал White -->
+      <div class="col-md-4">
+        <div class="studio-card p-4 rounded shadow text-center">
+          <img src="white-1.jpg" alt="Зал White" class="img-fluid rounded mb-3">
+          <h4 class="text-success mb-2">Зал White</h4>
+          <p>Большой и светлый зал White — самое подходящее место для создания индивидуальных, семейных и свадебных фотографий, а также проведения праздников и сборов невесты!</p>
+          <p><strong>Стоимость аренды: 2200 руб/час<br></strong></p>
+        </div>
+      </div>
+      <!-- Зал Loft -->
+      <div class="col-md-4">
+        <div class="studio-card p-4 rounded shadow text-center">
+          <img src="img_4863.jpg" alt="Зал Loft" class="img-fluid rounded mb-3">
+          <h4 class="text-success mb-2">Зал Loft</h4>
+          <p>Брутальный зал Loft идеально подойдет для стильных лав-стори, индивидуальных съемок и мужских портретов.</p>
+          <p><strong>Стоимость аренды: 2000 руб/час<br></strong></p>
+        </div>
+      </div>
+      <!-- Зал Гримерка -->
+      <div class="col-md-4">
+        <div class="studio-card p-4 rounded shadow text-center">
+          <img src="unnamed.jpg" alt="Зал Гримерка" class="img-fluid rounded mb-3">
+          <h4 class="text-success mb-2">Зал Гримерка</h4>
+          <p>Гримерные столы на 5 мест. Пожалуйста, заранее уточняйте возможность бронирования.</p>
+          <p><strong>Стоимость аренды: 500 руб/час<br></strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Наши услуги</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Индивидуальная фотосессия</h3>
+            <img src="individualnye-9-1024x682.jpg" alt="Индивидуальная фотосессия">
+            <p>6900 руб/час</p>
+            <a href="#booking" class="service-btn">Записаться</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Семейная фотосессия</h3>
+            <img src="semya-8-1-1024x682.jpg" alt="Семейная фотосессия">
+            <p>6500 руб/час</p>
+            <a href="#booking" class="service-btn">Записаться</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Свадебная фотосессия</h3>
+            <img src="sv-2-1024x682.jpg" alt="Свадебная фотосессия">
+            <p>6500 руб/час</p>
+            <a href="#booking" class="service-btn">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Галерея работ</h2>
+      <div class="gallery">
+        <img src="420.jpg" alt="Пример работы 1">
+        <img src="bere-3-1024x682.jpg" alt="Пример работы 2">
+        <img src="lav-3-1024x683.jpg" alt="Пример работы 3">
+        <img src="semya-10-1024x683.jpg" alt="Пример работы 4">
+        <img src="bere-1-1024x683.jpg" alt="Пример работы 5">
+        <img src="individualnye-6-1024x683.jpg" alt="Пример работы 6">
+        <img src="individualnye-8-1024x682.jpg" alt="Пример работы 7">
+        <img src="lav-2-1024x683.jpg" alt="Пример работы 8">
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <p>г.Владивосток, ул. Калинина 205, ТЦ "Зеленый Остров", 3 этаж</p>
+      <p>+7 (423) 275-8-572 | studiokiss@mail.ru</p>
+      <p>Ежедневно: 9:00 - 19:00</p>
+      <div class="social-links d-flex justify-content-center gap-3">
+        <a href="#" class="text-white text-decoration-none">VK</a>
+        <a href="#" class="text-white text-decoration-none">Instagram</a>
+        <a href="#" class="text-white text-decoration-none">YouTube</a>
+        <a href="#" class="text-white text-decoration-none">Telegram</a>
+      </div>
+      <p class="mt-3">© 2024 StudioKiss. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>
